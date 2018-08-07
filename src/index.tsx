@@ -412,6 +412,8 @@ export class Rnd extends React.Component<Props, State> {
         y,
       });
     }
+    const { maxWidth, maxHeight } = this.getMaxSizesFromProps();
+    this.setState({ maxWidth, maxHeight });
   }
 
   onResizeStop(
